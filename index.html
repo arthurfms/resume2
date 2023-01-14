@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arthur Fernandes</title>
-    <link rel="icon" type="image/x-icon" href="./images/favcon.svg" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <script
@@ -14,52 +13,69 @@
     ></script>
   </head>
   <body class="page">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-solid fa-house menu__icon"></i>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-solid fa-briefcase menu__icon"></i>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-solid fa-graduation-cap menu__icon"></i>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-solid fa-pen-ruler menu__icon"></i>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-solid fa-message-code menu__icon"></i>
-          </a>
-        </li>
-      </ul>
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-brands fa-linkedin menu__icon"></i>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-brands fa-square-github menu__icon"></i>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <i class="fa-solid fa-file-arrow-down menu__icon"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Work Experience</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Studies</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__left-content">
+        <h1 class="header__title">Arthur Fernandes</h1>
+        <h2 class="header__subtitle">Frontend Developer</h2>
+        <div class="about">
+          <p class="about__text">
+            Graduado em Análise e Desenvolvimento de Sistemas na Unicesumar e em
+            Jornalismo, capaz de criar páginas responsivas do zero, desde o
+            design, até desenhos de layouts e programação. Tenho experiência
+            trabalhando com manipulação de dados, análise de dados e suporte
+            técnico, trabalhei em grandes equipes e ambientes multiculturais.
+          </p>
+          <nav class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <i class="fa-brands fa-linkedin social__icon"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <i class="fa-brands fa-square-github social__icon"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <i class="fa-solid fa-file-arrow-down social__icon"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__right-content">
+        <img
+          class="header__image"
+          src="./images/profile__image3.jpg"
+          alt="Arthur Fernandes, frontend developer"
+        />
+        <a class="header__read-more" href="#"
+          >Read More <i class="fa-sharp fa-solid fa-arrow-down"></i
+        ></a>
+      </div>
+    </header>
     <main class="main-content"></main>
   </body>
 </html>
