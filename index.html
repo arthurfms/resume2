@@ -4,9 +4,11 @@
     <meta name="author" content="Arthur Fernandes" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favcon.svg" />
     <title>Arthur Fernandes</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./js/index.js"></script>
     <script
       src="https://kit.fontawesome.com/4b3366efb4.js"
       crossorigin="anonymous"
@@ -15,8 +17,18 @@
   <body class="page">
     <header class="header">
       <nav class="menu">
+        <div class="menu__options">
+          <i class="fa-solid fa-sun"></i>
+          <span class="menu__border-line"></span>
+          <i class="fa-solid fa-language"></i>
+          <ul class="languages">
+            <i class="fa-solid fa-xmark"></i>
+            <li class="languages__item">Spanish</li>
+            <li class="languages__item">Portuguese</li>
+          </ul>
+        </div>
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item menu__item_active">
             <a class="menu__link" href="#">Home</a>
           </li>
           <li class="menu__item">
@@ -38,11 +50,11 @@
         <h2 class="header__subtitle">Frontend Developer</h2>
         <div class="about">
           <p class="about__text">
-            Graduado em Análise e Desenvolvimento de Sistemas na Unicesumar e em
-            Jornalismo, capaz de criar páginas responsivas do zero, desde o
-            design, até desenhos de layouts e programação. Tenho experiência
-            trabalhando com manipulação de dados, análise de dados e suporte
-            técnico, trabalhei em grandes equipes e ambientes multiculturais.
+            Graduated in Software Analysis and Development from Unicesumar
+            (Brazil) and Journalism, able to create reponsive web pages from the
+            scratch, creating designs, making layouts and programming. I have
+            experience working with data manipulation, data analysis and
+            customer support, working in big teams and multicultural enviroment.
           </p>
           <nav class="social">
             <ul class="social__list">
@@ -76,6 +88,8 @@
         ></a>
       </div>
     </header>
-    <main class="main-content"></main>
+    <main class="main-content">
+      <section class="work-experience"></section>
+    </main>
   </body>
 </html>
