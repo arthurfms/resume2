@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" class="html">
   <head>
     <meta name="author" content="Arthur Fernandes" />
     <meta charset="UTF-8" />
@@ -10,6 +10,7 @@
     <script
       src="https://kit.fontawesome.com/4b3366efb4.js"
       crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
   </head>
   <body class="page">
     <!-- education example: https://ui-themez.smartinnovates.net/items/Gilb/home3.html -->
@@ -26,34 +27,43 @@
         <h2 class="header__subtitle">Software Developer</h2>
       </div>
       <nav class="menu">
+        <div class="menu__button">
+          <span class="menu__button-line"></span>
+          <span class="menu__button-line"></span>
+          <span class="menu__button-line"></span>
+        </div>
         <h3 class="menu__title">
           Arthur Fernandes<span class="menu__decorator">A</span>
         </h3>
         <span class="menu__line"></span>
         <ul class="menu__items">
           <li class="menu__item">
-            <a class="menu__link" href="#">About Me</a>
+            <a class="menu__link" href="#about">About Me</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Work Experience</a>
+            <a class="menu__link" href="#work-experience">Work Experience</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Skills</a>
+            <a class="menu__link" href="#skills">Skills</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Languages</a>
+            <a class="menu__link" href="#languages">Languages</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Education</a>
+            <a class="menu__link" href="#education">Education</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Contact</a>
+            <a class="menu__link" href="#contact">Contact</a>
           </li>
         </ul>
         <span class="menu__line"></span>
         <div class="social">
-          <a class="social__item"><i class="fa-brands fa-github"></i></a>
-          <a class="social__item"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="social__item" href="https://www.linkedin.com/in/arthur-fms/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a class="social__item" href="https://github.com/arthurfms"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
       </nav>
     </header>
@@ -92,7 +102,7 @@
             <a class="two-columns__cta two-columns__cta_contrast" href="#"
               >Download Resume</a
             >
-            <a class="two-columns__cta" href="#">Send a Message</a>
+            <a class="two-columns__cta" href="#contact">Send a Message</a>
           </div>
         </div>
       </div>
@@ -105,9 +115,28 @@
       </div>
       <div class="two-columns">
         <div class="two-columns__left">
+          <p class="two-columns__title">Global Integration Analyst</p>
+          <p class="two-columns__subtitle">
+            Awin Global (Remote) | Feb, 2024 - Current
+          </p>
+        </div>
+        <div class="two-columns__right">
+          <p class="two-columns__description">
+            Provide a high level of technical integration support for global
+            clients, identifying technical issues and escalating to engineering
+            team.
+          </p>
+          <p class="two-columns__description">
+            Work with technical issues to prompt solve it and guarantee the
+            tracking solution for affiliate marketing clients.
+          </p>
+        </div>
+      </div>
+      <div class="two-columns">
+        <div class="two-columns__left">
           <p class="two-columns__title">Front-end Software Developer</p>
           <p class="two-columns__subtitle">
-            InboundCycle (Remote) | Sep, 2022 - Current
+            InboundCycle (Remote) | Sep, 2022 - Jan, 2024
           </p>
         </div>
         <div class="two-columns__right">
@@ -239,8 +268,16 @@
           <p class="card__title">CSS</p>
         </div>
         <div class="card">
+          <i class="fa-solid fa-circle-nodes card__icon"></i>
+          <p class="card__title">API</p>
+        </div>
+        <div class="card">
           <i class="fa-brands fa-php card__icon"></i>
           <p class="card__title">PHP</p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-node-js card__icon"></i>
+          <p class="card__title">Node.js</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-database card__icon"></i>
@@ -251,12 +288,20 @@
           <p class="card__title">Git</p>
         </div>
         <div class="card">
+          <i class="fa-brands fa-jira card__icon"></i>
+          <p class="card__title">Jira</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-comments card__icon"></i>
+          <p class="card__title">Zendesk</p>
+        </div>
+        <div class="card">
           <i class="fa-brands fa-wordpress card__icon"></i>
           <p class="card__title">Wordpress</p>
         </div>
         <div class="card">
           <i class="fa-brands fa-hubspot card__icon"></i>
-          <p class="card__title">Hubspot</p>
+          <p class="card__title">Hubspot CMS</p>
         </div>
       </div>
     </section>
@@ -294,7 +339,7 @@
         <div class="timeline__item">
           <div class="timeline__details">
             <p class="timeline__title">Postgraduate's Degree</p>
-            <p class="timeline__date">July, 2023 - May, 2024</p>
+            <p class="timeline__date">Jul, 2023 - May, 2024</p>
           </div>
           <div class="timeline__main">
             <div class="timeline__main-title">
@@ -360,7 +405,7 @@
         <div class="timeline__item">
           <div class="timeline__details">
             <p class="timeline__title">Associate's Degree</p>
-            <p class="timeline__date">Jan, 2020 - August, 2022</p>
+            <p class="timeline__date">Jan, 2020 - Aug, 2022</p>
           </div>
           <div class="timeline__main">
             <div class="timeline__main-title">
@@ -414,40 +459,79 @@
         <h2 class="section-header__title">
           Contact Me<span class="section-header__decorator">C</span>
         </h2>
-        <form id="form1" name="form1" method="post" action="php/sendEmail.php">
-          <table
-            width="500"
-            border="0"
-            align="center"
-            cellpadding="0"
-            cellspacing="2">
-            <tr>
-              <td align="right">Nome:</td>
-              <td><input type="text" name="nome" id="nome" /></td>
-            </tr>
-            <tr>
-              <td align="right">Assunto:</td>
-              <td><input type="text" name="assunto" id="assunto" /></td>
-            </tr>
-            <tr>
-              <td align="right">Mensagem:</td>
-              <td>
-                <textarea
-                  name="mensagem"
-                  id="mensagem"
-                  cols="45"
-                  rows="5"></textarea>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" align="center">
-                <input type="submit" value="Enviar" />
-              </td>
-            </tr>
-          </table>
-        </form>
+      </div>
+      <div class="two-columns two-columns_form">
+        <div class="two-columns__left">
+          <ul class="list">
+            <li class="list-item">
+              <p class="list-item__title">Phone:</p>
+              <a class="list-item__link" href="#">+55 11 97107-1806</a>
+            </li>
+            <li class="list-item">
+              <p class="list-item__title">Email:</p>
+              <p class="list-item__content">a.fms@hotmail.com</p>
+            </li>
+            <li class="list-item list-item_social">
+              <a
+                class="list-item__link"
+                href="https://www.linkedin.com/in/arthur-fms/"
+                ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+              ></a>
+              <a class="list-item__link" href="https://github.com/arthurfms"
+                ><i class="fa-brands fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="two-columns__right">
+          <form class="two-columns__form">
+            <h3 class="form__title">Send me a message</h3>
+            <div class="form__field">
+              <input
+                class="form__input"
+                id="name-input"
+                type="text"
+                required=""
+                minlength="2"
+                maxlength="100"
+                placeholder="Name" />
+              <p class="form__input-error name-input-error"></p>
+            </div>
+            <div class="form__field">
+              <input
+                class="form__input"
+                id="email-input"
+                type="email"
+                required=""
+                maxlength="200"
+                placeholder="Email" />
+              <p class="form__input-error email-input-error"></p>
+            </div>
+            <div class="form__field">
+              <input
+                class="form__input"
+                id="subject-input"
+                type="text"
+                required=""
+                minlength="4"
+                maxlength="150"
+                placeholder="Subject" />
+              <p class="form__input-error subject-input-error"></p>
+            </div>
+            <div class="form__field">
+              <textarea
+                class="form__input"
+                id="message-input"
+                type="text"
+                required=""
+                maxlength="500"
+                placeholder="Message"></textarea>
+              <p class="form__input-error message-input-error"></p>
+            </div>
+            <p class="form__submit">Send</p>
+          </form>
+        </div>
       </div>
     </section>
   </body>
-  <script type="module" src="./js/index.js"></script>
 </html>
