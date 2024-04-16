@@ -16,9 +16,6 @@
   flex-direction: column;
   color: #ffffff;
 }
-.page_block {
-  overflow: hidden;
-}
 .page::-webkit-scrollbar-thumb {
   background-color: #96b6c5;
   border-radius: 3px;
