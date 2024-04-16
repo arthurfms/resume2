@@ -458,7 +458,7 @@
           Contact Me<span class="section-header__decorator">C</span>
         </h2>
       </div>
-      <div class="two-columns two-columns_form">
+      <div class="two-columns two-columns_contact">
         <div class="two-columns__left">
           <ul class="list">
             <li class="list-item">
@@ -482,52 +482,42 @@
           </ul>
         </div>
         <div class="two-columns__right">
-          <form class="two-columns__form">
-            <h3 class="form__title">Send me a message</h3>
-            <div class="form__field">
-              <input
-                class="form__input"
-                id="name-input"
-                type="text"
-                required=""
-                minlength="2"
-                maxlength="100"
-                placeholder="Name" />
-              <p class="form__input-error name-input-error"></p>
+          <div class="message-container">
+            <img class="message-container__image" src="images/wapp_qr.png" />
+            <div class="slides">
+              <span class="slides__arrow">
+                <i class="fa-solid fa-caret-left"></i>
+              </span>
+              <div class="slides__container">
+                <div class="slides__items slides__items_0">
+                  <a
+                    class="slides__item"
+                    id="gmail"
+                    href="https://mail.google.com/mail/u/0/?fs=1&to=a.fms@hotmail.com"
+                    target="_blank"
+                    >Email Using Gmail</a
+                  >
+                  <a
+                    class="slides__item"
+                    id="hotmail"
+                    href="https://outlook.office.com/owa/?path=/mail/action/compose&to=a.fms@hotmail.com"
+                    target="_blank"
+                    >Email Using Hotmail</a
+                  >
+                  <a
+                    class="slides__item"
+                    id="yahoo"
+                    href="https://compose.mail.yahoo.com/?to=a.fms@hotmail.com"
+                    target="_blank"
+                    >Email Using Yahoo</a
+                  >
+                </div>
+              </div>
+              <span class="slides__arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
             </div>
-            <div class="form__field">
-              <input
-                class="form__input"
-                id="email-input"
-                type="email"
-                required=""
-                maxlength="200"
-                placeholder="Email" />
-              <p class="form__input-error email-input-error"></p>
-            </div>
-            <div class="form__field">
-              <input
-                class="form__input"
-                id="subject-input"
-                type="text"
-                required=""
-                minlength="4"
-                maxlength="150"
-                placeholder="Subject" />
-              <p class="form__input-error subject-input-error"></p>
-            </div>
-            <div class="form__field">
-              <textarea
-                class="form__input"
-                id="message-input"
-                type="text"
-                required=""
-                maxlength="500"
-                placeholder="Message"></textarea>
-              <p class="form__input-error message-input-error"></p>
-            </div>
-            <p class="form__submit">Send</p>
-          </form>
+          </div>
         </div>
       </div>
     </section>
