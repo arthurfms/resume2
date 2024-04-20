@@ -583,6 +583,96 @@
 .timeline__description_strong {
   font-weight: 500;
 }
+/* PORTFOLIO */
+.grid-cards {
+  width: 90%;
+  display: flex;
+  row-gap: 40px;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.grid-card {
+  width: 45%;
+  height: 250px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px 0px rgba(51, 51, 51, 0.1);
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.grid-card_big {
+  width: 65%;
+  margin: auto;
+}
+.grid-card:hover {
+  box-shadow: 10px 10px 10px 0px rgba(51, 51, 51, 0.1);
+}
+.grid-card__bg {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.grid-card__details {
+  width: 100%;
+  height: fit-content;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  background: rgba(51, 51, 51, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.5s ease;
+}
+.grid-card:hover .grid-card__details {
+  height: 100%;
+  background: rgba(51, 51, 51, 0.5);
+  backdrop-filter: blur(8px);
+  border-top: none;
+  -webkit-backdrop-filter: blur(8px);
+}
+.grid-card__text {
+  color: #ffffff;
+}
+.grid-card__skills {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  align-items: center;
+  column-gap: 15px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.grid-card:hover .grid-card__skills {
+  height: auto;
+  width: 75%;
+  opacity: 1;
+}
+.grid-card__skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #ffffff;
+  background: #96b6c5;
+  padding: 5px 10px;
+}
 /* CONTACT */
 #contact::before {
   content: "";
@@ -794,6 +884,13 @@
 }
 
 /* MEDIA QUERIES */
+/* GET MOBILE */
+@media (pointer: course) {
+  .grid-card__details {
+    height: 50%;
+  }
+}
+/* SCREEN SIZE */
 @media (max-width: 1295px) {
   .header__avatar {
     width: 95px;
@@ -830,6 +927,10 @@
     }
     .slides {
       width: 100%;
+    }
+    .grid-card {
+      width: 75%;
+      margin: auto;
     }
     @media (max-width: 985px) {
       .section-header {
@@ -875,6 +976,9 @@
       }
       .message-container__image {
         width: 30%;
+      }
+      .grid-card {
+        width: 90%;
       }
       @media (max-width: 745px) {
         .header {
@@ -1064,6 +1168,12 @@
           }
           .message-container__image {
             width: 50%;
+          }
+          .grid-cards {
+            width: 100%;
+          }
+          .grid-card {
+            width: 100%;
           }
           @media (max-width: 325px) {
             .menu__button-line {
