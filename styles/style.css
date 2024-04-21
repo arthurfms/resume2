@@ -1224,9 +1224,8 @@
     opacity: 0.8;
   }
 }
-/* GET MOBILE 
-@media only screen and (hover: none) and (pointer: coarse or pointer: none) {*/
-@media (max-width: 500px) {
+/* GET MOBILE */
+@media only screen and (hover: none) and (pointer: coarse or pointer: none) {
   .grid-card__skills {
     height: fit-content;
     width: 100%;
