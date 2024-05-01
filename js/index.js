@@ -1,4 +1,5 @@
 window.addEventListener("load", (event) => {
+  let today = new Date();
   let body = document.querySelector(".page");
   let menu = body.querySelector(".menu");
   let menuButton = menu.querySelector(".menu__button");
@@ -50,4 +51,8 @@ window.addEventListener("load", (event) => {
     });
   };
   handleSlides(body.querySelector(".slides"));
+
+  // Generate Footer Year
+  let yearContainer = document.querySelector(".footer__year");
+  yearContainer.textContent = today.getFullYear();
 });

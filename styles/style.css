@@ -222,11 +222,19 @@
   text-decoration: none;
   transition: all 0.5s ease;
 }
-
+/* MAIN */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+}
 /* SECTION */
 .section {
   z-index: 75;
-  width: 80%;
+  width: 100%;
   padding: 10px 0 40px;
   margin-left: auto;
   display: flex;
@@ -434,9 +442,11 @@
   color: #96b6c5;
   font-size: 35px;
 }
-.card__image {
-  width: 55px;
-  margin-bottom: 20px;
+#languages .card__icon {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 4px 2px 4px rgba(51, 51, 51, 0.15);
 }
 .card__title {
   color: #333333;
@@ -818,7 +828,35 @@
   padding: 5px 10px;
   transition: display 0.1s ease, opacity 0.5s 0.25s ease;
 }
-
+/* FOOTER */
+.footer {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  color: #333333;
+  padding: 40px 0 15px;
+  font-size: 14px;
+}
+.footer::before {
+  content: "";
+  background: #96b6c51a;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.footer__decorator {
+  width: 20%;
+  height: 1px;
+  opacity: 0.2;
+  background: #333333;
+}
 /* MEDIA QUERIES */
 /* SCREEN SIZE */
 @media (max-width: 1295px) {
@@ -981,7 +1019,10 @@
         .menu .social {
           display: none;
         }
-        .section {
+        .main-content {
+          width: 100%;
+        }
+        .footer {
           width: 100%;
         }
         .list {
@@ -993,6 +1034,12 @@
         }
         .list-item__link i {
           font-size: 18px;
+        }
+        .footer__copyright {
+          text-align: center;
+        }
+        .footer__decorator {
+          display: none;
         }
         @media (max-width: 580px) {
           .header {
@@ -1056,11 +1103,15 @@
             width: max-content;
           }
           .cards_square .card {
-            width: 100%;
+            min-width: 100%;
             height: fit-content;
             display: grid;
-            grid-template-areas: "image title" "image subtitle";
-            justify-content: start;
+            grid-template-areas:
+              "title icon"
+              "subtitle icon";
+            justify-content: space-evenly;
+            align-items: center;
+            justify-items: center;
           }
           .card {
             padding: 10px 5px 10px 10px;
@@ -1073,9 +1124,11 @@
             font-size: 14px;
             font-weight: 500;
           }
-          .cards_square .card__image {
-            grid-area: image;
+          #languages .cards_square .card__icon {
+            margin: auto;
+            grid-area: icon;
             margin-bottom: 0;
+            font-size: 24px;
           }
           .cards_square .card__title {
             grid-area: title;
