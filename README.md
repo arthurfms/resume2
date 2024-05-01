@@ -8,11 +8,10 @@
 
 ## Website Sections
 
-💼 **Work Experience:** Here you can see my professional background
-💻 **Skills:** All my technical skills
-🌎 **Languages:** The languages that I speak
-📖 **Education:** Educational background and courses
-📬 **Contact:** My contact information
-<br>
+💼 **Work Experience:** Here you can see my professional background<br>
+💻 **Skills:** All my technical skills<br>
+🌎 **Languages:** The languages that I speak<br>
+📖 **Education:** Educational background and courses<br>
+📬 **Contact:** My contact information<br>
 <br>
 <br>
