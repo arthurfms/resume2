@@ -2,13 +2,13 @@
 @import url(components/reset.css);
 
 :root {
-  --theme-color: #a7c0be;
-  --theme-color-light: #d7d4cc;
-  --theme-color-dark: #9ca0a1;
-  --theme-color-details: #72584d;
+  --theme-color: #a1baae;
+  --theme-color-light: #edeadf;
+  --theme-color-dark: #9a9898;
+  --theme-color-details: #425465;
   --theme-color-details-light: #f6f4f4;
   --bg-light: #fbfaf9;
-  --bg-dark: #4d6772;
+  --bg-dark: #9a9898;
   --text-color: #434343;
   --text-color-dark: #333333;
   --text-color-light: #707070;
