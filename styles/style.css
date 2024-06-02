@@ -946,6 +946,7 @@
         width: 100%;
       }
       .section#skills-languages {
+        padding-top: 45px;
         row-gap: 60px;
       }
       .section#skills-languages .side-header {
