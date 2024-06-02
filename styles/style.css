@@ -447,7 +447,7 @@
   width: 45%;
 }
 #skills-languages .side-header__title {
-  color: var(--bg-dark);
+  color: var(--theme-color-details);
 }
 /* BULLET LIST */
 .bullet-list {
