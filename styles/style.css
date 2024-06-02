@@ -932,8 +932,15 @@
         position: absolute;
         transform: rotate(45deg);
       }
+      .header {
+        min-height: 325px;
+        height: 325px;
+      }
       .two-columns {
         width: 100%;
+      }
+      .two-columns__date {
+        width: 85px;
       }
       .table {
         width: 100%;
