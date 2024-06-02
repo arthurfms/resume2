@@ -259,7 +259,7 @@
   font-weight: 250;
   letter-spacing: 8px;
   text-transform: uppercase;
-  color: var(--bg-dark);
+  color: var(--theme-color-details);
 }
 /* WORK EXPERIENCE */
 .section#work-experience {
@@ -1010,7 +1010,7 @@
         }
         .section-header,
         .side-header__title {
-          font-size: 1.25rem;
+          font-size: 1.375rem;
         }
         .two-columns__date,
         .two-columns__title,
