@@ -1,13 +1,6 @@
 <!DOCTYPE html>
-<!--
-      _____       _    _                _____                             _           
-     |  _  | ___ | |_ | |_  _ _  ___   |   __| ___  ___  ___  ___  ___  _| | ___  ___ 
-     |     ||  _||  _||   || | ||  _|  |   __|| -_||  _||   || .'||   || . || -_||_ -|
-     |__|__||_|  |_|  |_|_||___||_|    |__|   |___||_|  |_|_||__,||_|_||___||___||___|
-  
-
-     Software Developer with MBA and postgraduate in Tech courses, working as a Global Integration Analyst at Awin.
-     Experienced working with front-end development, APIs, data analysis, data manipulation and customer support (Tier 2).
+<html lang="en-us">
+  <!-- 
       _________________________________________________
      |               CONTACT INFORMATION               |
      |                                                 |
@@ -17,20 +10,18 @@
      |   • Linkedin:   www.github.com/arthurfms        |
      |_________________________________________________|
   -->
-<html lang="en-us" class="html">
   <head>
     <meta name="author" content="Arthur Fernandes" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Software Developer</title>
-    <link rel="icon" type="image/x-icon" href="./images/favcon.svg" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Arthur Santos | Software Developer</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="./js/console.js"></script>
+    <script src="./js/index.js"></script>
     <script
       src="https://kit.fontawesome.com/4b3366efb4.js"
       crossorigin="anonymous"></script>
-    <script src="./js/console.js"></script>
-    <script src="./js/index.js"></script>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) 
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-EEVJLLZ206"></script>
@@ -42,627 +33,538 @@
       gtag("js", new Date());
 
       gtag("config", "G-EEVJLLZ206");
-    </script>
+    </script>-->
   </head>
   <body class="page">
-    <header class="header">
-      <span class="header__background"></span>
-      <div class="header__container">
-        <div class="header__image">
-          <img
-            class="header__avatar"
-            src="./images/avatar__image.jpg"
-            alt="Arthur Fernandes profile image" />
-          <span class="header__avatar-decorator"></span>
-        </div>
-        <h1 class="header__title">Arthur Fernandes</h1>
-        <span class="header__decorator">A</span>
-        <h2 class="header__subtitle">Software Developer</h2>
-      </div>
+    <header class="header" id="arthur-f">
       <nav class="menu">
-        <div class="menu__button">
-          <span class="menu__button-line"></span>
-          <span class="menu__button-line"></span>
-          <span class="menu__button-line"></span>
-        </div>
-        <h3 class="menu__title">
-          Arthur Fernandes<span class="menu__decorator">A</span>
-        </h3>
-        <span class="menu__line"></span>
-        <ul class="menu__items">
-          <li class="menu__item">
-            <a class="menu__link" href="#about">About Me</a>
+        <a class="menu-logo" href="#arthur-f">Arthur F.</a>
+        <ul class="menu-links">
+          <li class="menu-link">
+            <a href="#work-experience">Work Experience</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#work-experience">Work Experience</a>
+          <li class="menu-link"><a href="#education">Education</a></li>
+          <li class="menu-link">
+            <a href="#skills-languages">Skills & Languages</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#skills">Skills</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#languages">Languages</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#education">Education</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#contact">Contact</a>
-          </li>
+          <li class="menu-link"><a href="#projects">Projects</a></li>
+          <li class="menu-link"><a href="#contact-me">Contact</a></li>
         </ul>
-        <span class="menu__line"></span>
-        <div class="social">
-          <a
-            class="social__item"
-            href="https://www.linkedin.com/in/arthur-fms/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a
-            class="social__item"
-            href="https://github.com/arthurfms"
-            target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+        <div class="menu-options">
+          <div class="menu-options__social">
+            <a href="https://www.linkedin.com/in/arthur-fms" target="_blank">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/arthurfms" target="_blank">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://arthurfms.github.io/arthur-fernandes/documents/arthur-fernandes.pdf"
+              target="_blank">
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+        <div class="menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
         </div>
       </nav>
-    </header>
-    <main class="main-content">
-      <section class="section" id="about">
-        <div class="section-header">
-          <h2 class="section-header__title">
-            About Me<span class="section-header__decorator">A</span>
-          </h2>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
+      <div class="header-container">
+        <div class="header-image">
+          <div class="header-image__container">
+            <span class="header-image__shadow"></span>
             <img
-              src="./images/profile__image.jpg"
-              class="about__image"
+              src="images/profile__image.JPG"
               alt="Arthur Fernandes profile image" />
           </div>
-          <div class="two-columns__right">
-            <h3 class="two-columns__title">Arthur Fernandes</h3>
-            <h4 class="two-columns__subtitle">Software Developer</h4>
-            <p class="two-columns__description">
-              Software Developer with MBA and postgraduate in Tech courses,
-              working as a Global Integration Analyst at Awin. Experienced
-              working with
-              <strong class="two-columns__description_strong"
-                >front-end development</strong
-              >, <strong class="two-columns__description_strong">APIs</strong>,
-              <strong class="two-columns__description_strong"
-                >data analysis</strong
-              >,
-              <strong class="two-columns__description_strong"
-                >data manipulation</strong
-              >
-              and
-              <strong class="two-columns__description_strong"
-                >customer support (Tier 2)</strong
-              >.
-            </p>
-            <div class="two-columns__ctas">
-              <a
-                class="two-columns__cta two-columns__cta_contrast"
-                href="documents/arthur-fernandes.pdf"
-                target="_blank"
-                >Resume PDF</a
-              >
-              <a class="two-columns__cta" href="#contact">Send a Message</a>
+        </div>
+        <div class="header-content">
+          <h1 class="header-title">Arthur Fernandes</h1>
+          <h2 class="header-subtitle">Software Developer</h2>
+          <p class="header-description">
+            Software Developer with MBA and postgraduate in Tech courses,
+            working as a Global Integration Analyst at Awin. Experienced working
+            with
+            <span class="header-description_strong">front-end development</span
+            >, <span class="header-description_strong">APIs</span>,
+            <span class="header-description_strong">data analysis</span>,
+            <span class="header-description_strong">data manipulation</span> and
+            <span class="header-description_strong"
+              >customer support (Tier 2)</span
+            >.
+          </p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section" id="work-experience">
+        <h3 class="section-header">Work Experience</h3>
+        <div class="two-columns">
+          <div class="two-columns__container">
+            <p class="two-columns__date">Feb, 2024 - Present</p>
+            <div class="two-columns__content">
+              <div class="two-columns__header">
+                <p class="two-columns__title">Global Integration Analyst</p>
+                <p class="two-columns__subtitle">Awin Global (Remote)</p>
+              </div>
+              <div class="two-columns__description">
+                <p class="two-columns__paragraph">
+                  Provide a high level of technical integration support for
+                  global clients, identifying technical issues and escalating to
+                  engineering team.
+                </p>
+                <p class="two-columns__paragraph">
+                  Work with technical issues to prompt solve it and guarantee
+                  the tracking solution for affiliate marketing clients.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section" id="work-experience">
-        <div class="section-header">
-          <h2 class="section-header__title">
-            Work Experience<span class="section-header__decorator">E</span>
-          </h2>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
-            <p class="two-columns__title">Global Integration Analyst</p>
-            <p class="two-columns__subtitle">
-              Awin Global (Remote) | Feb, 2024 - Present
-            </p>
+          <div class="two-columns__container">
+            <p class="two-columns__date">Sep, 2022 - Jan, 2024</p>
+            <div class="two-columns__content">
+              <div class="two-columns__header">
+                <p class="two-columns__title">Front-end Software Developer</p>
+                <p class="two-columns__subtitle">InboundCycle (Remote)</p>
+              </div>
+              <div class="two-columns__description">
+                <p class="two-columns__paragraph">
+                  Implement the frontend side for different projects, including
+                  full website, blogs, landing pages and emails. Maintain
+                  server, create reports and find solutions to different
+                  requests received from accounts teams and clients.
+                </p>
+                <p class="two-columns__paragraph">
+                  Analyse incidents, find bugs and work directly on the fix,
+                  keeping all projects properly working.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="two-columns__right">
-            <p class="two-columns__description">
-              Provide a high level of technical integration support for global
-              clients, identifying technical issues and escalating to
-              engineering team.
-            </p>
-            <p class="two-columns__description">
-              Work with technical issues to prompt solve it and guarantee the
-              tracking solution for affiliate marketing clients.
-            </p>
+          <div class="two-columns__container">
+            <p class="two-columns__date">May, 2021 - Sep, 2022</p>
+            <div class="two-columns__content">
+              <div class="two-columns__header">
+                <p class="two-columns__title">Data Implementation Specialist</p>
+                <p class="two-columns__subtitle">Doctoralia España (Spain)</p>
+              </div>
+              <div class="two-columns__description">
+                <p class="two-columns__paragraph">
+                  Management and manipulation of big databases to generate
+                  specific formats, necessaries to new clients implementations.
+                  Process organization and maintenance to guarantee data
+                  protection and information quality in company system.
+                </p>
+                <p class="two-columns__paragraph">
+                  Contacting with all involved teams, keeping the process
+                  flowing to ensure that every step works as the company
+                  standards, and training new import members.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
-            <p class="two-columns__title">Front-end Software Developer</p>
-            <p class="two-columns__subtitle">
-              InboundCycle (Remote) | Sep, 2022 - Jan, 2024
-            </p>
+          <div class="two-columns__container">
+            <p class="two-columns__date">Mar, 2021 - May, 2021</p>
+            <div class="two-columns__content">
+              <div class="two-columns__header">
+                <p class="two-columns__title">Data Analyst</p>
+                <p class="two-columns__subtitle">Doctoralia Brasil (Brazil)</p>
+              </div>
+              <div class="two-columns__description">
+                <p class="two-columns__paragraph">
+                  Improve data analysis for Marketing, lead generation and DP
+                  phone operations, update and maintenance workflows to optimize
+                  data collection. Generate dashboards and data insights for all
+                  related teams, focusing on new leads, keep and improve
+                  operation control, goals update and team commission standard.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="two-columns__right">
-            <p class="two-columns__description">
-              Implement the frontend side for different projects, including full
-              website, blogs, landing pages and emails. Maintain server, create
-              reports and find solutions to different requests received from
-              accounts teams and clients.
-            </p>
-            <p class="two-columns__description">
-              Analyse incidents, find bugs and work directly on the fix, keeping
-              all projects properly working.
-            </p>
-          </div>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
-            <p class="two-columns__title">Data Implementation Specialist</p>
-            <p class="two-columns__subtitle">
-              Doctoralia España (Spain) | May, 2021 - Sep, 2022
-            </p>
-          </div>
-          <div class="two-columns__right">
-            <p class="two-columns__description">
-              Management and manipulation of big databases to generate specific
-              formats, necessaries to new clients implementations. Process
-              organization and maintenance to guarantee data protection and
-              information quality in company system.
-            </p>
-            <p class="two-columns__description">
-              Contacting with all involved teams, keeping the process flowing to
-              ensure that every step works as the company standards, and
-              training new import members.
-            </p>
-          </div>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
-            <p class="two-columns__title">Data Analyst</p>
-            <p class="two-columns__subtitle">
-              Doctoralia Brasil (Brazil) | Mar, 2021 - May, 2021
-            </p>
-          </div>
-          <div class="two-columns__right">
-            <p class="two-columns__description">
-              Improve data analysis for Marketing, lead generation and DP phone
-              operations, update and maintenance workflows to optimize data
-              collection. Generate dashboards and data insights for all related
-              teams, focusing on new leads, keep and improve operation control,
-              goals update and team commission standard.
-            </p>
-          </div>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
-            <p class="two-columns__title">Support Analyst</p>
-            <p class="two-columns__subtitle">
-              Doctoralia Brasil (Brazil) | Sep, 2019 - Mar, 2021
-            </p>
-          </div>
-          <div class="two-columns__right">
-            <p class="two-columns__description">
-              Provide support for employees and users with doubts, bugs
-              corrections with scripts on SaaS, Marketplace and financial
-              system. Report weakness, find solutions to prevent bugs, and
-              notify developers about necessary corrections by Jiras. Data
-              report creation and analysis based on Support and Customer Success
-              actions and needs.
-            </p>
-            <p class="two-columns__description">
-              Helped client migration service improvement on support side
-              actions, changing the avarege time from +20 working hours to a 4
-              working hours.
-            </p>
-          </div>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
-            <p class="two-columns__title">Customer Success Analyst - Latam</p>
-            <p class="two-columns__subtitle">
-              Doctoralia Brasil (Brazil) | Apr, 2019 - Sep, 2019
-            </p>
-          </div>
-          <div class="two-columns__right">
-            <p class="two-columns__description">
-              Assist health professionals from Chile by phone and email. Made
-              usability training and helping them with platform issues, setting
-              the environment for new clients and keeping track of their needs.
-              Follow client's engagement and guarantee the best usage from the
-              system, generating best results and helping them to achieve their
-              goals.
-            </p>
-          </div>
-        </div>
-        <div class="two-columns">
-          <div class="two-columns__left">
-            <p class="two-columns__title">Trilingual Call Center Agent</p>
-            <p class="two-columns__subtitle">
-              Sykes Brasil (Brazil) | Sep, 2018 - Apr, 2019
-            </p>
-          </div>
-          <div class="two-columns__right">
-            <p class="two-columns__description">
-              Manage corporate cards request in English, Portuguese and Spanish.
-              Credit card limit raises requests, account information and client
-              needs. Receive and follow client's request, managing their
-              information following all companies process.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="skills">
-        <div class="section-header">
-          <h2 class="section-header__title">
-            Skills<span class="section-header__decorator">S</span>
-          </h2>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <i class="fa-brands fa-square-js card__icon"></i>
-            <p class="card__title">JavaScript</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-html5 card__icon"></i>
-            <p class="card__title">HTML</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-css3-alt card__icon"></i>
-            <p class="card__title">CSS</p>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-circle-nodes card__icon"></i>
-            <p class="card__title">API</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-php card__icon"></i>
-            <p class="card__title">PHP</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-node-js card__icon"></i>
-            <p class="card__title">Node.js</p>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-database card__icon"></i>
-            <p class="card__title">SQL</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-git-alt card__icon"></i>
-            <p class="card__title">Git</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-jira card__icon"></i>
-            <p class="card__title">Jira</p>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-comments card__icon"></i>
-            <p class="card__title">Zendesk</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-wordpress card__icon"></i>
-            <p class="card__title">Wordpress</p>
-          </div>
-          <div class="card">
-            <i class="fa-brands fa-hubspot card__icon"></i>
-            <p class="card__title">Hubspot CMS</p>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="languages">
-        <div class="section-header">
-          <h2 class="section-header__title">
-            Languages<span class="section-header__decorator">L</span>
-          </h2>
-        </div>
-        <div class="cards cards_square">
-          <div class="card">
-            <p class="card__icon">PT-BR</p>
-            <p class="card__title">Portuguese</p>
-            <p class="card__subtitle">Native</p>
-          </div>
-          <div class="card">
-            <p class="card__icon">EN</p>
-            <p class="card__title">English</p>
-            <p class="card__subtitle">Fluent</p>
-          </div>
-          <div class="card">
-            <p class="card__icon">ES</p>
-            <p class="card__title">Spanish</p>
-            <p class="card__subtitle">Fluent</p>
+          <div class="two-columns__container">
+            <p class="two-columns__date">Sep, 2019 - Mar, 2021</p>
+            <div class="two-columns__content">
+              <div class="two-columns__header">
+                <p class="two-columns__title">Support Analyst</p>
+                <p class="two-columns__subtitle">Doctoralia Brasil (Brazil)</p>
+              </div>
+              <div class="two-columns__description">
+                <p class="two-columns__paragraph">
+                  Provide support for employees and users with doubts, bugs
+                  corrections with scripts on SaaS, Marketplace and financial
+                  system. Report weakness, find solutions to prevent bugs, and
+                  notify developers about necessary corrections by Jiras. Data
+                  report creation and analysis based on Support and Customer
+                  Success actions and needs.
+                </p>
+                <p class="two-columns__paragraph">
+                  Helped client migration service improvement on support side
+                  actions, changing the avarege time from +20 working hours to a
+                  4 working hours.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="section" id="education">
-        <div class="section-header">
-          <h2 class="section-header__title">
-            Education<span class="section-header__decorator">E</span>
-          </h2>
+        <div class="side-header">
+          <h3 class="side-header__title">Education</h3>
+          <span class="side-header__decorator">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- autor: Arthur Fernadnes, Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 315 286"
+              style="enable-background: new 0 0 315 286"
+              xml:space="preserve">
+              <g>
+                <path
+                  class="side-header__decorator_bg"
+                  d="M182.97,20.5C133.11-2.35,69.6,1.24,63.39,20.5c-5.41,16.79,37.93,29.45,37.18,61.3
+		c-0.53,22.43-32.89,25.24-69.34,72.35c-11.08,14.32-16.65,21.71-18.32,33.03c-4.71,31.91,25.68,62.58,42.44,74.49
+		c78.15,55.55,239.43-27.02,235.14-65.32c-3.36-30.07-110.33-34.86-110.54-66.32c-0.15-22.67,55.3-30.8,56.27-59.29
+		C237.1,45.31,193.82,25.47,182.97,20.5z" />
+                <path
+                  class="side-header__decorator_line"
+                  d="M194.97,21.5C145.11-1.35,81.6,2.24,75.39,21.5c-5.41,16.79,37.93,29.45,37.18,61.3
+		c-0.53,22.43-32.89,25.24-69.34,72.35c-11.08,14.32-16.65,21.71-18.32,33.03c-4.71,31.91,25.68,62.58,42.44,74.49
+		c78.15,55.55,239.43-27.02,235.14-65.32c-3.36-30.07-110.33-34.86-110.54-66.32c-0.15-22.67,55.3-30.8,56.27-59.29
+		C249.1,46.31,205.82,26.47,194.97,21.5z" />
+              </g>
+            </svg>
+          </span>
         </div>
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__details">
-              <p class="timeline__title">Postgraduate's Degree</p>
-              <p class="timeline__date">Jul, 2023 - May, 2024</p>
-            </div>
-            <div class="timeline__main">
-              <div class="timeline__main-title">
-                <p class="timeline__name">Computer Engineering</p>
-                <p class="timeline__text">
-                  Centro Universitário Internacional - UNINTER
-                </p>
-              </div>
-              <p class="timeline__description">
-                Computer Engineering postgraduate course, focused on products
-                management and emerging technologies.The main subjects of the
-                course were
-                <span class="timeline__description_strong"
-                  >Software Engineering</span
-                >,
-                <span class="timeline__description_strong"
-                  >IT Architecture and Business Model</span
-                >,
-                <span class="timeline__description_strong"
-                  >Projects Analysis and Viability</span
-                >,
-                <span class="timeline__description_strong"
-                  >Computer Network Administration</span
-                >, and
-                <span class="timeline__description_strong">Cybersecurity</span>.
-              </p>
-            </div>
+        <div class="table">
+          <div class="table-container table-container_full">
+            <h4 class="table-container__title">Computer Engineering</h4>
+            <p class="table-container__subtitle">
+              Centro Universitário Internacional - UNINTER
+            </p>
+            <p class="table-container__detail">
+              <span>Postgraduate's Degree</span>
+              Jul, 2023 - May, 2024
+            </p>
+            <p class="table-container__description">
+              Computer Engineering postgraduate course, focused on products
+              management and emerging technologies.The main subjects of the
+              course were
+              <span class="table-container__description_detail"
+                >Software Engineering</span
+              >,
+              <span class="table-container__description_detail"
+                >IT Architecture and Business Model</span
+              >,
+              <span class="table-container__description_detail"
+                >Projects Analysis and Viability</span
+              >,
+              <span class="table-container__description_detail"
+                >Computer Network Administration</span
+              >, and
+              <span class="table-container__description_detail"
+                >Cybersecurity.</span
+              >
+            </p>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__details">
-              <p class="timeline__title">MBA Degree</p>
-              <p class="timeline__date">May, 2023 - May, 2024</p>
-            </div>
-            <div class="timeline__main">
-              <div class="timeline__main-title">
-                <p class="timeline__name">Strategic Management in UX Design</p>
-                <p class="timeline__text">
-                  Centro Universitário Internacional - UNINTER
-                </p>
-              </div>
-              <p class="timeline__description">
-                Master of Business Administration course, focused on User
-                Experience, Product Management and Digital Marketing.The main
-                subjects of the course were
-                <span class="timeline__description_strong"
-                  >Information, Interaction and Usability Design</span
-                >,
-                <span class="timeline__description_strong"
-                  >User Experience and Digital Platforms</span
-                >,
-                <span class="timeline__description_strong"
-                  >Innovation and Design Thinking</span
-                >,
-                <span class="timeline__description_strong"
-                  >Applied Digital Law</span
-                >, and
-                <span class="timeline__description_strong"
-                  >Decision Making and Intuition</span
-                >.
-              </p>
-            </div>
+          <div class="table-container">
+            <h4 class="table-container__title">
+              Strategic Management in UX Design
+            </h4>
+            <p class="table-container__subtitle">
+              Centro Universitário Internacional - UNINTER
+            </p>
+            <p class="table-container__detail">
+              <span>MBA Degree</span>
+              May, 2023 - May, 2024
+            </p>
+            <p class="table-container__description">
+              Master of Business Administration course, focused on User
+              Experience, Product Management and Digital Marketing. The main
+              subjects of the course were
+              <span class="table-container__description_detail"
+                >Information, Interaction and Usability Design</span
+              >,<span class="table-container__description_detail"
+                >User Experience and Digital Platforms</span
+              >,
+              <span class="table-container__description_detail"
+                >Innovation and Design Thinking</span
+              >,<span class="table-container__description_detail"
+                >Applied Digital Law</span
+              >, and
+              <span class="table-container__description_detail"
+                >Decision Making and Intuition</span
+              >.
+            </p>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__details">
-              <p class="timeline__title">Associate's Degree</p>
-              <p class="timeline__date">Jan, 2020 - Aug, 2022</p>
-            </div>
-            <div class="timeline__main">
-              <div class="timeline__main-title">
-                <p class="timeline__name">Software Analysis and Development</p>
-                <p class="timeline__text">
-                  Centro Universitário de Maringá - UNICESUMAR
-                </p>
-              </div>
-              <p class="timeline__description">
-                2.5 years Software development focused Associate's course. The
-                course gave a basis knowledge for different subjects, being the
-                main ones
-                <span class="timeline__description_strong"
-                  >Front-end Development</span
-                >,
-                <span class="timeline__description_strong"
-                  >Back-end Development</span
-                >,
-                <span class="timeline__description_strong"
-                  >Programming Logic</span
-                >, <span class="timeline__description_strong">SQL</span>, and
-                <span class="timeline__description_strong"
-                  >Database Structure</span
-                >.
-              </p>
-            </div>
+          <div class="table-container">
+            <h4 class="table-container__title">
+              Software Analysis and Development
+            </h4>
+            <p class="table-container__subtitle">
+              Centro Universitário de Maringá - UNICESUMAR
+            </p>
+            <p class="table-container__detail">
+              <span>Associate's Degree</span>
+              Jan, 2020 - Aug, 2022
+            </p>
+            <p class="table-container__description">
+              2.5 years Software development focused Associate's course. The
+              course gave a basis knowledge for different subjects, being the
+              main ones
+              <span class="table-container__description_detail"
+                >Front-end and Back-end Development</span
+              >,
+              <span class="table-container__description_detail"
+                >Programming Logic</span
+              >, <span class="table-container__description_detail">SQL</span>,
+              and
+              <span class="table-container__description_detail"
+                >Database Structure</span
+              >.
+            </p>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__details">
-              <p class="timeline__title">Bachelor's Degree</p>
-              <p class="timeline__date">Jan, 2013 - Dec, 2017</p>
-            </div>
-            <div class="timeline__main">
-              <div class="timeline__main-title">
-                <p class="timeline__name">Journalism</p>
-                <p class="timeline__text">
-                  Universidade Metodista de São Paulo
-                </p>
-              </div>
-              <p class="timeline__description">
-                4 years Journalism and Social Communication course, during this
-                graduation I had practical experience creating, editing and
-                publishing communication content. I also produced and published
-                a photojournalism book about Inca's culture influence at
-                contemporary Argentina's Northwest territory, being awarded
-                later as the best thesis production of the graduation year.
-              </p>
-            </div>
+          <div class="table-container">
+            <h4 class="table-container__title">Journalism</h4>
+            <p class="table-container__subtitle">
+              Universidade Metodista de São Paulo
+            </p>
+            <p class="table-container__detail">
+              <span>Bachelor's Degree</span>
+              Jan, 2013 - Dec, 2017
+            </p>
+            <p class="table-container__description">
+              4 years Journalism and Social Communication course, during this
+              graduation I had practical experience
+              <span class="table-container__description_detail"
+                >creating, editing and publishing communication content</span
+              >. I also produced and published a photojournalism book about
+              Inca's culture influence at contemporary Argentina's Northwest
+              territory, being awarded later as the best thesis production of
+              the graduation year.
+            </p>
           </div>
         </div>
       </section>
-      <section class="section" id="portfolio">
-        <div class="section-header">
-          <h2 class="section-header__title">
-            Portfolio<span class="section-header__decorator">P</span>
-          </h2>
+      <section class="section" id="skills-languages">
+        <div class="side-header">
+          <h3 class="side-header__title">Skills & Languages</h3>
         </div>
-        <div class="grid-cards">
+        <ul class="bullet-list">
+          <li class="bullet-list__item">
+            <span class="bullet-list__detail">EN</span>
+            <p class="bullet-list__language">English | Fluent</p>
+          </li>
+          <li class="bullet-list__item">
+            <span class="bullet-list__detail">ES</span>
+            <p class="bullet-list__language">Spanish | Fluent</p>
+          </li>
+          <li class="bullet-list__item">
+            <span class="bullet-list__detail">PT</span>
+            <p class="bullet-list__language">Portuguese-BR | Native</p>
+          </li>
+        </ul>
+        <ul class="bullet-list bullet-list_full">
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-square-js"></i>
+            <p class="bullet-list__skill">JavaScript</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-html5"></i>
+            <p class="bullet-list__skill">HTML</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p class="bullet-list__skill">CSS</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-solid fa-circle-nodes"></i>
+            <p class="bullet-list__skill">API</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-php"></i>
+            <p class="bullet-list__skill">PHP</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-node-js"></i>
+            <p class="bullet-list__skill">Node.js</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-solid fa-database"></i>
+            <p class="bullet-list__skill">SQL</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-git-alt"></i>
+            <p class="bullet-list__skill">GIT</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-jira"></i>
+            <p class="bullet-list__skill">Jira</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-solid fa-comments"></i>
+            <p class="bullet-list__skill">Zendesk</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-wordpress"></i>
+            <p class="bullet-list__skill">Wordpress</p>
+          </li>
+          <li class="bullet-list__item">
+            <i class="fa-brands fa-hubspot"></i>
+            <p class="bullet-list__skill">Hubspot CMS</p>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="projects">
+        <h3 class="section-header">Projects</h3>
+        <div class="project-cards">
           <a
-            class="grid-card grid-card_big"
-            href="https://arthurfms.github.io/web_project_4"
+            class="project-card"
+            href="https://arthurfms.github.io/web_project_4/"
             target="_blank">
             <img
-              class="grid-card__bg"
-              src="images/practicum - 3.png"
-              alt="Practicum Bootcamp coding project" />
-            <div class="grid-card__details">
-              <p class="grid-card__text">
+              class="project-card__image"
+              src="./images/practicum - 3.png"
+              alt="Practicum projet 3" />
+            <div class="project-card__container">
+              <h6 class="project-card__title">Practicum Bootcamp Project 3</h6>
+              <div class="project-card__skills">
+                <p class="project-card__skill">API</p>
+                <p class="project-card__skill">JS</p>
+                <p class="project-card__skill">CSS</p>
+                <p class="project-card__skill">HTML</p>
+              </div>
+              <p class="project-card__description">
                 A social media simulator, where the user can change name or job
-                position, and add new image post.
+                position, and add new image post. This website uses API to send
+                an retrieve information from a server.
               </p>
-              <div class="grid-card__skills">
-                <p class="grid-card__skill">API</p>
-                <p class="grid-card__skill">JavaScript</p>
-                <p class="grid-card__skill">HTML</p>
-                <p class="grid-card__skill">CSS</p>
-              </div>
             </div>
           </a>
           <a
-            class="grid-card"
-            href="https://arthurfms.github.io/web_project_3_ptbr"
+            class="project-card"
+            href="https://arthurfms.github.io/web_project_3_ptbr/"
             target="_blank">
             <img
-              class="grid-card__bg"
-              src="images/practicum - 2.png"
-              alt="Practicum Bootcamp coding project" />
-            <div class="grid-card__details">
-              <p class="grid-card__text">
-                Part of Practicum Bootcamp, it's a responsive landpage about
-                different person's homeland.
-              </p>
-              <div class="grid-card__skills">
-                <p class="grid-card__skill">HTML</p>
-                <p class="grid-card__skill">CSS</p>
+              class="project-card__image"
+              src="./images/practicum - 2.png"
+              alt="Practicum projet 2" />
+            <div class="project-card__container">
+              <h6 class="project-card__title">Practicum Bootcamp Project 2</h6>
+              <div class="project-card__skills">
+                <p class="project-card__skill">css</p>
+                <p class="project-card__skill">HTML</p>
               </div>
+              <p class="project-card__description">
+                Responsive landpage about different person's homeland. This
+                project is a responsive website using HTML, CSS and BEM
+                methodology.
+              </p>
             </div>
           </a>
           <a
-            class="grid-card"
-            href="https://arthurfms.github.io/web_project_1_ptbr"
+            class="project-card"
+            href="https://arthurfms.github.io/web_project_1_ptbr/"
             target="_blank">
             <img
-              class="grid-card__bg"
-              src="images/practicum - 1.png"
-              alt="Practicum Bootcamp coding project" />
-            <div class="grid-card__details">
-              <p class="grid-card__text">
+              class="project-card__image"
+              src="./images/practicum - 1.png"
+              alt="Practicum projet 1" />
+            <div class="project-card__container">
+              <h6 class="project-card__title">Practicum Bootcamp Project 1</h6>
+              <div class="project-card__skills">
+                <p class="project-card__skill">css</p>
+                <p class="project-card__skill">HTML</p>
+              </div>
+              <p class="project-card__description">
                 Simple HTML and CSS non-reponsive page as the first project for
-                Practicum Bootcamp.
+                Practicum Bootcamp. This project was made with HTML, CSS (non
+                responsive) and BEM methodology, as part of a year bootcamp
+                course.
               </p>
-              <div class="grid-card__skills">
-                <p class="grid-card__skill">HTML</p>
-                <p class="grid-card__skill">CSS</p>
-              </div>
             </div>
           </a>
         </div>
       </section>
-      <section class="section" id="contact">
-        <div class="section-header">
-          <h2 class="section-header__title">
-            Contact Me<span class="section-header__decorator">C</span>
-          </h2>
-        </div>
-        <div class="two-columns two-columns_contact">
-          <div class="two-columns__left">
-            <ul class="list">
-              <li class="list-item">
-                <p class="list-item__title">Phone:</p>
-                <a
-                  class="list-item__link"
-                  href="https://wa.me/5511971071806"
-                  target="_blank"
-                  >+55 11 97107-1806</a
-                >
+      <section class="section" id="contact-me">
+        <h3 class="section-header">Contact me</h3>
+        <div class="two-columns">
+          <div class="two-columns__container two-columns__container_small">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a href="https://wa.me/5511971071806" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  +55 11 97107-1806
+                </a>
               </li>
-              <li class="list-item">
-                <p class="list-item__title">Email:</p>
-                <p class="list-item__content">a.fms@hotmail.com</p>
+              <li class="contact__item">
+                <i class="fa-regular fa-envelope"></i>
+                a.fms@hotmail.com
               </li>
-              <li class="list-item list-item_social">
-                <a
-                  class="list-item__link"
-                  href="https://www.linkedin.com/in/arthur-fms/"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
-                ></a>
-                <a
-                  class="list-item__link"
-                  href="https://github.com/arthurfms"
-                  target="_blank"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i
-                ></a>
-              </li>
+              <ul class="contact__list contact__list_social">
+                <li class="contact__item">
+                  <a
+                    href="https://www.linkedin.com/in/arthur-fms"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <a href="https://github.com/arthurfms" target="_blank">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <a
+                    href="https://arthurfms.github.io/arthur-fernandes/documents/arthur-fernandes.pdf"
+                    target="_blank">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                  </a>
+                </li>
+              </ul>
             </ul>
           </div>
-          <div class="two-columns__right">
-            <div class="message-container">
-              <img
-                class="message-container__image"
-                src="images/wapp_qr.png"
-                alt="Whatsapp QR code" />
-              <div class="slides">
-                <span class="slides__arrow">
-                  <i class="fa-solid fa-caret-left"></i>
-                </span>
-                <div class="slides__container">
-                  <div class="slides__items slides__items_0">
-                    <a
-                      class="slides__item"
-                      id="gmail"
-                      href="https://mail.google.com/mail/u/0/?fs=1&to=a.fms@hotmail.com"
-                      target="_blank"
-                      >Email Using Gmail</a
-                    >
-                    <a
-                      class="slides__item"
-                      id="hotmail"
-                      href="https://outlook.office.com/owa/?path=/mail/action/compose&to=a.fms@hotmail.com"
-                      target="_blank"
-                      >Email Using Hotmail</a
-                    >
-                    <a
-                      class="slides__item"
-                      id="yahoo"
-                      href="https://compose.mail.yahoo.com/?to=a.fms@hotmail.com"
-                      target="_blank"
-                      >Email Using Yahoo</a
-                    >
-                  </div>
-                </div>
-                <span class="slides__arrow">
-                  <i class="fa-solid fa-caret-right"></i>
-                </span>
+          <div class="two-columns__container two-columns__container_main">
+            <form class="contact-form">
+              <div class="contact-form__input" id="name-input">
+                <label for="name">Name</label>
+                <input type="text" name="name" />
+                <p class="contact-form__error contact-form__error_hidden"></p>
               </div>
-            </div>
+              <div class="contact-form__input" id="email-input">
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+                <p class="contact-form__error contact-form__error_hidden"></p>
+              </div>
+              <div class="contact-form__input" id="message-input">
+                <label for="message">Message</label>
+                <textarea name="message"></textarea>
+                <p class="contact-form__error contact-form__error_hidden"></p>
+              </div>
+              <button class="contact-form__button" type="submit">
+                Send Message
+              </button>
+              <p class="contact-form__popup">Message Sent!</p>
+              <iframe
+                id="form-iframe"
+                src="./documents/iframe-form.html"></iframe>
+            </form>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <span class="footer__decorator"></span>
       <p class="footer__copyright">
-        Copyright &copy <span class="footer__year"></span> Arthur Fernandes. All
+        Copyright © <span class="footer__year"></span> Arthur Fernandes. All
         rights reserved.
       </p>
-      <span class="footer__decorator"></span>
     </footer>
+    <script src="./js/form.js"></script>
   </body>
 </html>

@@ -1,58 +1,30 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
   let today = new Date();
-  let body = document.querySelector(".page");
-  let menu = body.querySelector(".menu");
-  let menuButton = menu.querySelector(".menu__button");
-  let menuItems = menu.querySelectorAll(".menu__item");
-
-  menuButton.addEventListener("click", (evt) =>
-    menu.classList.toggle("menu_collapse")
-  );
-  menuItems.forEach((item) => {
-    item.addEventListener("click", (evt) =>
-      menu.classList.contains("menu_collapse")
-        ? menu.classList.toggle("menu_collapse")
-        : ""
-    );
-  });
-
-  // HANDLE SLIDES
-  const handleSlides = (slidesContainer) => {
-    let slides = slidesContainer.querySelector(".slides__items");
-    let arrows = slidesContainer.querySelectorAll(".slides__arrow i");
-    let arrowLeft = arrows[0];
-    let arrowRight = arrows[1];
-    let slidesLength = slides.querySelectorAll(".slides__item").length;
-    arrowLeft.addEventListener("click", () => {
-      let currClass = slides.classList[1];
-      let newClass;
-      slides.classList.remove(currClass);
-      if (parseInt(currClass[currClass.length - 1]) == 0) {
-        newClass = `slides__items_${slidesLength - 1}`;
-      } else {
-        newClass = `slides__items_${
-          parseInt(currClass[currClass.length - 1]) - 1
-        }`;
-      }
-      slides.classList.add(newClass);
-    });
-    arrowRight.addEventListener("click", () => {
-      let currClass = slides.classList[1];
-      let newClass;
-      slides.classList.remove(currClass);
-      if (parseInt(currClass[currClass.length - 1]) == slidesLength - 1) {
-        newClass = "slides__items_0";
-      } else {
-        newClass = `slides__items_${
-          parseInt(currClass[currClass.length - 1]) + 1
-        }`;
-      }
-      slides.classList.add(newClass);
-    });
-  };
-  handleSlides(body.querySelector(".slides"));
-
-  // Generate Footer Year
   let yearContainer = document.querySelector(".footer__year");
   yearContainer.textContent = today.getFullYear();
+
+  // Manage menu on scroll
+  let menu = document.querySelector(".menu");
+  onscroll = () => {
+    window.scrollY == 0
+      ? menu.classList.remove("menu_active")
+      : menu.classList.add("menu_active");
+  };
+
+  // Manage menu on click
+  let menuButton = menu.querySelector(".menu-button");
+  menuButton.addEventListener("click", () => {
+    menu.classList.toggle("menu_open");
+  });
+  let menuItems = [];
+  menu.querySelectorAll(".menu-link").forEach((link) => menuItems.push(link));
+  menuItems.push(menu.querySelector(".menu-logo"));
+  menu
+    .querySelectorAll(".menu-options__social a")
+    .forEach((link) => menuItems.push(link));
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      menu.classList.remove("menu_open");
+    });
+  });
 });
