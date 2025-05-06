@@ -1,39 +1,7 @@
 window.addEventListener("load", () => {
   // Send Form
   const sendForm = (inputs, form) => {
-    let iframeForm =
-      document.querySelector("#form-iframe").contentWindow.document.body;
-    inputs.forEach((input) => {
-      let inputValue = input.querySelector("input")
-        ? input.querySelector("input").value
-        : input.querySelector("textarea").value;
-      switch (input.id) {
-        case "name-input":
-          iframeForm
-            .querySelector("#iframe-name")
-            .querySelector("input").value = inputValue;
-          break;
-
-        case "email-input":
-          iframeForm
-            .querySelector("#iframe-email")
-            .querySelector("input").value = inputValue;
-          break;
-
-        case "message-input":
-          iframeForm
-            .querySelector("#iframe-message")
-            .querySelector("textarea").value = inputValue;
-          break;
-      }
-    });
-    iframeForm.querySelector(".contact-form__button").click();
     setTimeout(() => {
-      document.querySelector("#form-iframe").remove();
-      let newIframe = document.createElement("iframe");
-      newIframe.id = "form-iframe";
-      newIframe.src = "./documents/iframe-form.html";
-      form.append(newIframe);
       form
         .querySelector(".contact-form__popup")
         .classList.add("contact-form__popup_sent");
@@ -173,17 +141,4 @@ window.addEventListener("load", () => {
     evt.preventDefault();
     formValidation(visibleForm);
   });
-
-  /*
-  MISSING STEPS:
-  - VALIDATE REAL FORM
-  - IF NOT CORRECT:
-      - ADD ERROR MESSAGES
-      - BLOCK SENDING BUTTON VISUALLY
-  - IF CORRECT:
-      - ADD INPUTS INTO IFRAME FORM
-      - CLICK ON SEND BUTTON ON IFRAME FORM
-      - WAIT UNTIL IFRAME IS RELOAD AND CONFIRM SENDING
-      - DELETE IFRAME AND ADD IT AGAIN 
-  */
 });
